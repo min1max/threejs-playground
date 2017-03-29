@@ -1,0 +1,26 @@
+$varblue : #0000aa;
+
+@mixin outLine ($size){
+	border: $size solid black;
+}
+
+body{
+  padding: 0;
+  margin: 0; 
+  overflow: hidden;
+
+  h1{
+    color:red;
+    display: flex;
+  }
+
+  p{
+  	color: $varblue;
+  	@include outLine(2px);
+  }
+}
+
+.viewport canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
